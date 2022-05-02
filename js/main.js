@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     clickHandler.addEventListener('click', (ev) => {
         ev.preventDefault()
-        const 
+        console.log('clicked');
     })
 })
+

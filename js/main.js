@@ -40,7 +40,10 @@ addBtn.addEventListener('click', () => {
     onAdd()
 });
 
-input.addEventListener('keypress', (ev) => {
+input.addEventListener('keyup', (ev) => {
+    if(ev.isComposing){
+        return;
+    }
     if(ev.key === 'Enter'){
         onAdd()
     }
